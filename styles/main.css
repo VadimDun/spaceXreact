@@ -8,10 +8,60 @@
 
 .content {
     flex-grow: 0.7;
+    min-width: 0;
 }
-#listContainer{
+
+#listContainer {
     height: 300px;
     overflow: hidden;
     overflow-y: scroll;
     border: black 1px solid;
+}
+
+#listContainer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.launch-item {
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+.launch-item:hover,
+.launch-item:focus-visible {
+    background-color: #edf2f7;
+}
+
+.launch-item small {
+    display: block;
+    color: #777777;
+    margin-top: 3px;
+}
+
+.launchpad-marker {
+    fill: #e74c3c;
+    stroke: #ffffff;
+    stroke-width: 1.5px;
+    cursor: pointer;
+}
+
+.launchpad-marker.active {
+    fill: #ffc107;
+    stroke: #222222;
+    stroke-width: 2.5px;
+}
+
+.mapContainer svg {
+    width: 100%;
+    height: auto;
+    display: block;
 }
